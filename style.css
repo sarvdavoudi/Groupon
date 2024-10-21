@@ -22,7 +22,12 @@ html {
 
 /* ****************************************** */
 /* general */
-
+a {
+  text-decoration: none;
+  color: inherit;
+  /*The color of links inherits from their parent. Because its parent color is white,
+    so the links will be white*/
+}
 .btn {
   margin: 10px 0 0 10px;
 }
@@ -120,9 +125,9 @@ header {
 }
 .navigation-section3.searchBox {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /*X and Y axis reversed so we have reversed justify-content and align items*/
+  justify-content: center;/* y axis*/
+  align-items: center;/* x axis*/
 }
 .navigation-section3.searchBox input {
   padding: 10px 20px;
